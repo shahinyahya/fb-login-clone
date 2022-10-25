@@ -15,19 +15,20 @@ body {
   background-color: rgba(1, 1, 1, 0.08);
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  padding-bottom: 100px;
 }
 
 .main-content {
   display: flex;
   flex-direction: column;
-  align-items: end;
+  margin-right: 90px;
 }
 
 .main-content img {
   width: 300px;
   height: 120px;
-  margin: 0;
+  margin: -20px;
 }
 
 .main-content p {
@@ -37,9 +38,15 @@ body {
 }
 
 .form-section form {
-  border: 1px solid black;
-  border-radius: 15px;
-  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 400px;
+  height: 100%;
+}
+
+.form-section::after {
+  content: "Create a Page for a celebrity, brand or business.";
+  margin-left: 50px;
 }
 
 .login-container {
@@ -49,9 +56,78 @@ body {
 }
 
 .create-container {
-  border-top: 1px solid black;
+  border-top: 0.5px solid rgba(1, 1, 1, 0.1);
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
-  /* align-items: center; */
+}
+
+.input {
+  padding: 10px;
+  width: 90%;
+  margin: 15px 0 0 0;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid rgba(1, 1, 1, 0.2);
+  height: 2.5vw;
+}
+
+.input::placeholder {
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.btn {
+  border-radius: 10px;
+  font-weight: bolder;
+  font-size: 18px;
+  color: #fff;
+  height: 2.5vw;
+  cursor: pointer;
+}
+
+.login-btn {
+  background-color: #1877f2;
+  width: 90%;
+  padding: 10px;
+  margin-top: 15px;
+  outline: none;
+  border: none;
+  transition: 0.4s ease;
+}
+
+.login-btn:hover {
+  background-color: #166fe5;
+}
+
+.login-container a {
+  margin-top: 15px;
+  text-decoration: none;
+  color: #1877f2;
+}
+
+.login-container a:active {
+  color: #1877f2;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+}
+
+.create-container {
+  margin: 15px;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+
+.create-btn {
+  padding: 10px;
+  margin-top: 15px;
+  outline: none;
+  border: none;
+  background-color: #42b72a;
+  transition: 0.4s ease;
+}
+
+.create-btn:hover {
+  background-color: #36a420;
 }
