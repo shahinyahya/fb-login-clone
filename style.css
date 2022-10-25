@@ -48,7 +48,7 @@ body {
 
 .form-section::after {
   content: "Create a Page for a celebrity, brand or business.";
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 .create-link {
@@ -141,7 +141,7 @@ body {
 .footer {
   display: flex;
   flex-direction: column;
-  max-width: 50%;
+  max-width: 55%;
   margin: 0 auto;
 }
 
@@ -200,7 +200,7 @@ body {
 }
 
 .langs a {
-  color: rgba(1, 1, 1, 0.6);
+  color: rgba(1, 1, 1, 0.5);
 }
 
 .bottom-footer_container .menu-list {
