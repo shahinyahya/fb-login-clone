@@ -38,6 +38,7 @@ body {
 }
 
 .form-section form {
+  box-shadow: 0 2px 4px rgb(0 0 0 /10%), 0 8px 16px rgb(0 0 0 /10%);
   background-color: #fff;
   border-radius: 10px;
   width: 400px;
@@ -47,6 +48,10 @@ body {
 .form-section::after {
   content: "Create a Page for a celebrity, brand or business.";
   margin-left: 50px;
+}
+
+.create-link {
+  display: flex;
 }
 
 .login-container {
@@ -130,4 +135,79 @@ body {
 
 .create-btn:hover {
   background-color: #36a420;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.top-footer_container {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 15px;
+  border-bottom: 1px solid rgba(1, 1, 1, 0.1);
+}
+
+.lang-list {
+  display: flex;
+}
+
+.english {
+  list-style: none;
+  margin: 5px;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(1, 1, 1, 0.6);
+}
+
+.langs {
+  list-style-type: none;
+  margin: 0 5px 5px 8px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.langs a {
+  text-decoration: none;
+}
+
+.langs a:hover {
+  text-decoration: underline;
+}
+
+#plus-btn a {
+  text-decoration: none;
+  position: relative;
+  font-size: 20px;
+  color: #333;
+}
+
+#plus-btn::after {
+  content: "";
+  width: 20px;
+  height: 17px;
+  background-color: #f5f6f7;
+  z-index: -1;
+  position: absolute;
+}
+
+.langs a {
+  color: rgba(1, 1, 1, 0.6);
+}
+
+.bottom-footer_container .menu-list {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.credits {
+  color: rgba(1, 1, 1, 0.6);
 }
