@@ -32,6 +32,46 @@ body {
   margin-top: 75px;
   border-radius: 10px;
   z-index: 9999;
+  transition: 0.2s;
+  opacity: 0;
+}
+
+.sign-up-section-container::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 20px;
+  top: 10px;
+  right: 20px;
+  transform: rotate(45deg);
+  background-color: rgba(1, 1, 1, 0.6);
+}
+
+.sign-up-section-container::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 20px;
+  top: 10px;
+  right: 20px;
+  transform: rotate(135deg);
+  background-color: rgba(1, 1, 1, 0.6);
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .top-head {
@@ -40,6 +80,16 @@ body {
   margin-left: 10px;
   margin-top: 10px;
   padding: 10px;
+  position: relative;
+}
+
+.small-box {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
 }
 
 .top-head p {
@@ -59,7 +109,7 @@ body {
 .name-container input {
   padding: 10px;
   margin: 0 10px 0 8px;
-  border-radius: 10px;
+  border-radius: 5px;
   outline: none;
   background-color: rgba(150, 150, 150, 0.2);
   border: 1px solid rgba(1, 1, 1, 0.2);
@@ -76,7 +126,7 @@ body {
 .empa-input input {
   padding: 10px;
   width: 98%;
-  border-radius: 10px;
+  border-radius: 5px;
   outline: none;
   border: 1px solid rgba(1, 1, 1, 0.2);
   margin-bottom: 10px;
@@ -207,7 +257,7 @@ body {
   margin: 0;
 }
 
-.form-section form {
+.form-section .form {
   box-shadow: 0 2px 4px rgb(0 0 0 /10%), 0 8px 16px rgb(0 0 0 /10%);
   background-color: #fff;
   border-radius: 10px;

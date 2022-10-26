@@ -11,12 +11,13 @@
     <link rel="stylesheet" href="style.css" />
     <title>Facebook – log in or sign up</title>
   </head>
-  <body>
+  <body class="body">
     <main class="main-section">
       <div class="sign-up-section-container">
         <div class="top-head">
           <p>Sign Up</p>
           <small>It's quick and easy.</small>
+          <div class="small-box"></div>
         </div>
         <form class="signup-form">
           <div class="name-container">
@@ -47,7 +48,7 @@
                 <option value="12">12</option>
               </select>
               
-              <select name="month" id="month">
+              <select name="nomo" id="nomo">
                 <option value="1">January</option>
                 <option value="2">February</option>
                 <option value="3">March</option>
@@ -111,7 +112,7 @@
         </p>
       </section>
       <section class="form-section">
-        <form action="#" method="post">
+        <div class="form">
           <div class="login-container">
             <input
               placeholder="Email address or phone number"
@@ -137,13 +138,13 @@
               class="btn create-btn"
             />
           </div>
-        </form>
+        </div>
       </section>
     </main>
     <footer class="footer">
       <section class="top-footer_container">
         <ul class="lang-list"></ul>
-          <li class="english">English (UK)</li>
+        <li class="english">English (UK)</li>
           <li class="langs"><a href="#">മലയാളം</a></li>
           <li class="langs"><a href="#">தமிழ்</a></li>
           <li class="langs"><a href="#">ಕನ್ನಡ</a></li>
@@ -193,5 +194,26 @@
         <small>Meta &copy; 2022 </small>
       </div>
     </footer>
+    <div id="overlay"></div>
+
+    <script defer>
+
+      const body = document.querySelector('.body');
+      const createBtn = document.querySelector('.btn.create-btn');
+      const signUpContainer = document.querySelector('.sign-up-section-container');
+      const overlay = document.getElementById("overlay");
+      const closeBtn = document.querySelector('.small-box');
+
+      createBtn.addEventListener('click', ()=>{
+        overlay.classList.add('active')
+        signUpContainer.style.opacity = 1;        
+      })
+      
+      closeBtn.addEventListener('click', ()=>{
+        overlay.classList.remove('active')
+        signUpContainer.style.opacity = 0;        
+      })
+
+    </script>
   </body>
 </html>
