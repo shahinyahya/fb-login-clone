@@ -11,6 +11,7 @@ body {
 }
 
 .main-section {
+  position: relative;
   width: 100%;
   height: 720px;
   background-color: rgba(1, 1, 1, 0.08);
@@ -18,6 +19,174 @@ body {
   align-items: center;
   justify-content: center;
   padding-bottom: 100px;
+}
+
+.sign-up-section-container {
+  background-color: #fff;
+  width: 440px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 75px;
+  border-radius: 10px;
+  z-index: 9999;
+}
+
+.top-head {
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.top-head p {
+  margin: 0;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.top-head small {
+  color: rgba(1, 1, 1, 0.5);
+}
+
+.name-container {
+  width: 100%;
+}
+
+.name-container input {
+  padding: 10px;
+  margin: 0 10px 0 8px;
+  border-radius: 10px;
+  outline: none;
+  background-color: rgba(150, 150, 150, 0.2);
+  border: 1px solid rgba(1, 1, 1, 0.2);
+}
+
+.empa-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 0 0;
+}
+
+.empa-input input {
+  padding: 10px;
+  width: 98%;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid rgba(1, 1, 1, 0.2);
+  margin-bottom: 10px;
+  background-color: rgba(150, 150, 150, 0.2);
+}
+
+.dob {
+  display: flex;
+  flex-direction: column;
+}
+.small {
+  margin-left: 10px;
+  color: rgba(1, 1, 1, 0.7);
+}
+
+.dob-options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.dob-options select {
+  width: 30%;
+  height: 35px;
+  border: 1px solid rgba(1, 1, 1, 0.2);
+  border-radius: 5px;
+  outline: none;
+  background-color: white;
+}
+
+.gender-radio {
+  display: flex;
+  margin: 5px 0 0 10px;
+}
+
+.gender-small small {
+  margin: 10px 0 0 20px;
+  color: rgba(1, 1, 1, 0.5);
+}
+
+.gender-radio label {
+  border: 1px solid rgba(1, 1, 1, 0.2);
+  width: 30%;
+  margin-left: 10px;
+  height: 35px;
+  text-align: center;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.gender-radio label input {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  outline: none;
+}
+
+.learnmore-container {
+  margin: 10px 0 0 10px;
+  max-width: 400px;
+  color: rgba(1, 1, 1, 0.6);
+}
+
+.learnmore-container small a {
+  text-decoration: none;
+  color: #166fe5;
+}
+
+.learnmore-container small a:hover {
+  text-decoration: underline;
+}
+
+.privacypolicy-container {
+  margin-left: 10px;
+  margin-top: 10px;
+  color: rgba(1, 1, 1, 0.6);
+  font-size: 15px;
+}
+
+.privacypolicy-container small a {
+  text-decoration: none;
+  color: #166fe5;
+}
+
+.privacypolicy-container small a:hover {
+  text-decoration: underline;
+}
+
+.signup-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.signup-button button {
+  padding: 5px;
+  width: 40%;
+  height: 35px;
+  border: none;
+  background-color: #36a420;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .main-content {
